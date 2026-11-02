@@ -14,6 +14,7 @@ mkdir -p "$DL_TMP"
 echo "[$(date +%T)] data bundle"
 "$HF" download jhq0709/vlm-8b-data --repo-type dataset --local-dir "$DL_TMP"
 tar -xf "$DL_TMP/data_8b.tar" -C "$REPO"
+tar -xf "$DL_TMP/data_8b_extra.tar" -C "$REPO"   # alt_window.json and img448w
 rm -rf "$DL_TMP"
 "$PY" "$REPO/fix_paths.py" --check
 echo "[$(date +%T)] checkpoints"
