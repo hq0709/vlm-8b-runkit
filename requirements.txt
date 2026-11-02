@@ -1,0 +1,19 @@
+# Python 3.13; versions pinned to the environment the runs were developed in (torch 2.13.0 wheels built for CUDA 13.0)
+torch==2.13.0
+torchvision==0.28.0
+transformers==5.17.0
+trl==1.14.1
+vllm==0.31.0
+peft==0.21.2
+accelerate==1.15.0
+datasets==5.1.0
+huggingface_hub==1.33.0
+safetensors==0.8.0
+tokenizers==0.23.2
+pillow==12.3.0
+numpy==2.4.6
+scipy==1.18.1
+qwen-vl-utils==0.0.14
+# only for training modes not used by these runs (verify.py, medground.py)
+opencv-python-headless==5.0.0.93
+open_clip_torch==3.3.0

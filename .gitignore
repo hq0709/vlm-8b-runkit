@@ -1,0 +1,9 @@
+data/
+runs/
+results/
+logs/
+hf_cache/
+.download/
+.venv/
+__pycache__/
+*.pyc
